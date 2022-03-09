@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulários em Java Script</title>
+    <style type="text/css">
+      .esconder {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+          <legend>Nome</legend>
+          <input type="text" id="texto" />    
+      </fieldset>
+      <fieldset>
+          <legend>Telefone</legend>
+          <input type="tel" id="fone" />
+      </fieldset>
+      <fieldset>
+          <legend>Email</legend>
+          <input type="email" id="email" />
+      </fieldset>
+      <fieldset>
+          <legend>Senha</legend>
+          <input type="password" id="senha" />
+      </fieldset>
+      <fieldset>
+        <legend>Cursos</legend>
+        <label for="1info"> Informática </label>
+        <input type="checkbox" id="1info" /> <br />
+        <label for="1adm"> Administração </label>
+        <input type="checkbox" id="1adm" /> <br />
+        <label for="1enf"> Enfermagem </label>
+        <input type="checkbox" id="1enf" />
+      </fieldset>
+      <fieldset>
+        <legend>Curso</legend>
+        <label for="2info"> Informática </label>
+        <input type="radio" name="seucurso" id="2info" /> <br />
+        <label for="2adm"> Administração </label>
+        <input type="radio" name="seucurso" id="2adm" /> <br />
+        <label for="2enf"> Enfermagem </label>
+        <input type="radio" name="seucurso" id="2enf" />
+      </fieldset>
+      <fieldset>
+        <legend>Oculto</legend>
+        <input type="hidden" name="oculto" id="oculto" value="12" />
+      </fieldset>
+      <fieldset>
+        <legend>Números</legend>
+        <input type="number" name="nume" id="nume" />
+      </fieldset>
+      <fieldset>
+        <legend>Data</legend>
+        <input type="date" name="data" id="data" />
+      </fieldset>
+      <fieldset>
+        <legend>Hora</legend>
+        <input type="time" name="hora" id="hora" />
+      </fieldset>
+      <fieldset>
+        <legend>Barra</legend>
+        <input type="range" id="range" min="10" max="100" />
+      </fieldset>
+      <fieldset>
+        <legend>Faixa</legend>
+        <label for="PriFaixa"> 1° faixa: </label>
+        <select name="cars" id="Faixa">
+          <option value="0">Preta</option>
+          <option value="1">Marrom</option>
+          <option value="2">Vermelha</option>
+          <option value="3">Laranja</option>
+        </select>
+      </fieldset>
+      <p> <button type="reset">Limpar</button> </p>
+      <p> <button type="button" onclick="pegarDados()">Validar</button> </p>
+      <fieldset class="esconder">
+        <legend>Resumo</legend>
+        <div id="camText"></div>
+        <div id="camFone"></div>
+        <div id="camEmail"></div>
+        <div id="camSenha"></div>
+        <div id="camCheckInfo"></div>
+        <div id="camCheckAdm"></div>
+        <div id="camCheckEnf"></div>
+        <div id="camCheckCur"></div>
+        <div id="camOcult"></div>
+        <div id="camNum"></div>
+        <div id="camData"></div>
+        <div id="camHora"></div>
+        <div id="camRange"></div>
+        <div id="camSel"></div>
+      </fieldset>
+    </form>
+    <script src="valida.js"></script>
+  </body>
+</html>
